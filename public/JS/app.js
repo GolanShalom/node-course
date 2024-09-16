@@ -12,7 +12,7 @@ whetherForm.addEventListener('submit',(e)=>{
    
  msg1.textContent = 'Loading.....'   
  msg2.textContent=''   
-fetch('http://localhost:3000/weather?adress=' + location).then((response)=>{
+fetch('/weather?adress=' + location).then((response)=>{
 
     response.json().then((data)=>{
         
