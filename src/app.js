@@ -76,7 +76,7 @@ app.get('/weather',(req,res)=>{
      geocode.GetCoordinates(req.query.adress,({place_name,center:coordinate}={}) => {
 
         if(!place_name)
-            return res.send({error:'adress must be provided'})
+            return res.send({error:'adress must be provided 44'})
 
         console.log(place_name)
         forecast.GetForecast(coordinate , '', (error, data) => {

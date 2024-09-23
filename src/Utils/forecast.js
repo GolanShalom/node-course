@@ -19,7 +19,9 @@ const GetForecast = (coordinate,longitude,callback)=>
                  placename : response.body.location,
                  temperature : response.body.current.temperature,
                  Rainchance :  response.body.current.weather_icons,
-                 forcast:response.body.current.weather_descriptions + '. It is currently feelsLike ' +response.body.current.feelslike 
+                 forcast:response.body.current.weather_descriptions + '. It is currently feelsLike '  +
+                 response.body.current.feelslike +' temperature ' + response.body.current.temperature  +
+                 ' Rainchance ' + response.body.current.weather_icons
             })
             
         }
